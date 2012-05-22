@@ -19,9 +19,11 @@ class AppKernel extends Kernel
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new Acme\HelloBundle\AcmeHelloBundle(),
             //new Acme\DemoBundle\AcmeDemoBundle(),
+            new Blogger\BlogBundle\BloggerBlogBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
+            $bundles[] = new Blogger\BlogBundle\BloggerBlogBundle();
             $bundles[] = new Acme\DemoBundle\AcmeDemoBundle();
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
