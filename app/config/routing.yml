@@ -1,12 +1,17 @@
 BloggerBlogBundle:
     resource: "@BloggerBlogBundle/Resources/config/routing.yml"
     prefix:   /
-
-AcmeHelloBundle:
-    resource: "@AcmeHelloBundle/Resources/config/routing.yml"
-    prefix:   /
+    
+BloggerBlogBundle_about:
+    pattern:  /about
+    defaults: { _controller: BloggerBlogBundle:Page:about }
+    requirements:
+        _method:  GET
+#AcmeHelloBundle:
+#    resource: "@AcmeHelloBundle/Resources/config/routing.yml"
+#    prefix:   /
 
 # Internal routing configuration to handle ESI
 #_internal:
 #   resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
-#   prefix:   /_internal   
+#   prefix:   /_internal
