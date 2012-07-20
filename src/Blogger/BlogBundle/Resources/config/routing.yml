@@ -4,3 +4,8 @@ BloggerBlogBundle_homepage:
     defaults: { _controller: BloggerBlogBundle:Page:index }
     requirements:
         _method:  GET
+BloggerBlogBundle_contact:
+    pattern:  /contact
+    defaults: { _controller: BloggerBlogBundle:Page:contact }
+    requirements:
+        _method:  GET|POST
