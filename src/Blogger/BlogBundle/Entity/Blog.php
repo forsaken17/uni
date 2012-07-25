@@ -4,6 +4,7 @@
 namespace Blogger\BlogBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * @ORM\Entity(repositoryClass="Blogger\BlogBundle\Repository\BlogRepository")
@@ -67,6 +68,11 @@ class Blog
         $this->setUpdated(new \DateTime());
     }
 
+    public function __toString()
+    {
+        return $this->getTitle();
+    }
+    
     /**
      * @ORM\preUpdate
      */
@@ -74,7 +80,7 @@ class Blog
     {
        $this->setUpdated(new \DateTime());
     }
-    
+
     public function getComments() {
         return $this->comments;
     }

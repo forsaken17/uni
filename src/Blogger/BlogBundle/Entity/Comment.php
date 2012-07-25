@@ -4,7 +4,8 @@
 namespace Blogger\BlogBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-
+use Symfony\Component\Validator\Mapping\ClassMetadata;
+use Symfony\Component\Validator\Constraints\NotBlank;
 /**
  * @ORM\Entity(repositoryClass="Blogger\BlogBundle\Repository\CommentRepository")
  * @ORM\Table(name="comment")
@@ -69,7 +70,7 @@ class Comment
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -89,7 +90,7 @@ class Comment
     /**
      * Get user
      *
-     * @return string 
+     * @return string
      */
     public function getUser()
     {
@@ -109,7 +110,7 @@ class Comment
     /**
      * Get comment
      *
-     * @return text 
+     * @return text
      */
     public function getComment()
     {
@@ -129,7 +130,7 @@ class Comment
     /**
      * Get approved
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getApproved()
     {
@@ -149,7 +150,7 @@ class Comment
     /**
      * Get created
      *
-     * @return datetime 
+     * @return datetime
      */
     public function getCreated()
     {
@@ -169,7 +170,7 @@ class Comment
     /**
      * Get updated
      *
-     * @return datetime 
+     * @return datetime
      */
     public function getUpdated()
     {
@@ -189,10 +190,20 @@ class Comment
     /**
      * Get blog
      *
-     * @return Blogger\BlogBundle\Entity\Blog 
+     * @return Blogger\BlogBundle\Entity\Blog
      */
     public function getBlog()
     {
         return $this->blog;
+    }
+
+    public static function loadValidatorMetadata(ClassMetadata $metadata)
+    {
+        $metadata->addPropertyConstraint('user', new NotBlank(array(
+            'message' => 'You must enter your name'
+        )));
+        $metadata->addPropertyConstraint('comment', new NotBlank(array(
+            'message' => 'You must enter a comment'
+        )));
     }
 }
