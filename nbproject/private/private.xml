@@ -2,9 +2,25 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
-        <file>file:/home/tt/projects/Symfony/src/Blogger/BlogBundle/Controller/PageController.php</file>
-        <file>file:/home/tt/projects/Symfony/src/Blogger/BlogBundle/Resources/config/routing.yml</file>
-        <file>file:/home/tt/projects/Symfony/app/config/routing_dev.yml</file>
-        <file>file:/home/tt/projects/Symfony/app/config/routing.yml</file>
+        <file>file:/home/tt/projects/symfony/src/Blogger/BlogBundle/Entity/Blog.php</file>
+        <file>file:/home/tt/projects/symfony/src/Blogger/BlogBundle/Resources/config/routing.yml</file>
+        <file>file:/home/tt/projects/symfony/src/Blogger/BlogBundle/Controller/BlogController.php</file>
+        <file>file:/home/tt/projects/symfony/src/Blogger/BlogBundle/Resources/views/Blog/show.html.twig</file>
+        <file>file:/home/tt/projects/symfony/src/Blogger/BlogBundle/Resources/public/css/blog.css</file>
+        <file>file:/home/tt/projects/symfony/app/autoload.php</file>
+        <file>file:/home/tt/projects/symfony/app/AppKernel.php</file>
+        <file>file:/home/tt/projects/symfony/src/Blogger/BlogBundle/DataFixtures/ORM/BlogFixtures.php</file>
+        <file>file:/home/tt/projects/symfony/src/Blogger/BlogBundle/Controller/PageController.php</file>
+        <file>file:/home/tt/projects/symfony/src/Blogger/BlogBundle/Resources/views/Page/index.html.twig</file>
+        <file>file:/home/tt/projects/symfony/src/Blogger/BlogBundle/Repository/BlogRepository.php</file>
+        <file>file:/home/tt/projects/symfony/src/Blogger/BlogBundle/Entity/Comment.php</file>
+        <file>file:/home/tt/projects/symfony/src/Blogger/BlogBundle/DataFixtures/ORM/CommentFixtures.php</file>
+        <file>file:/home/tt/projects/symfony/src/Blogger/BlogBundle/Repository/CommentRepository.php</file>
+        <file>file:/home/tt/projects/symfony/src/Blogger/BlogBundle/Resources/views/Comment/index.html.twig</file>
+        <file>file:/home/tt/projects/symfony/src/Blogger/BlogBundle/Form/CommentType.php</file>
+        <file>file:/home/tt/projects/symfony/src/Blogger/BlogBundle/Entity/Enquiry.php</file>
+        <file>file:/home/tt/projects/symfony/src/Blogger/BlogBundle/Controller/CommentController.php</file>
+        <file>file:/home/tt/projects/symfony/src/Blogger/BlogBundle/Resources/views/Comment/form.html.twig</file>
+        <file>file:/home/tt/projects/symfony/src/Blogger/BlogBundle/Resources/views/Comment/create.html.twig</file>
     </open-files>
 </project-private>
