@@ -1,4 +1,5 @@
 /nbproject
+/phpunit-report
 /web/bundles/
 /app/bootstrap*
 /app/cache/*
