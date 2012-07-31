@@ -1,0 +1,6 @@
+{
+    "require": {
+        "friendsofsymfony/user-bundle": "*",
+        "sonata-project/doctrine-orm-admin-bundle":"dev-master",
+    }
+}

@@ -9,7 +9,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use JMS\SecurityExtraBundle\Annotation\Secure;
 
 /**
- * @Route("/demo/secured")
+ * @Route("/admin")
  */
 class SecuredController extends Controller
 {
@@ -48,17 +48,8 @@ class SecuredController extends Controller
     }
 
     /**
-     * @Route("/hello", defaults={"name"="World"}),
+     * @Route("/", name="_secured", defaults={"name"="World"}),
      * @Route("/hello/{name}", name="_demo_secured_hello")
-     * @Template()
-     */
-    public function helloAction($name)
-    {
-        return array('name' => $name);
-    }
-
-    /**
-     * @Route("/hello/admin/{name}", name="_demo_secured_hello_admin")
      * @Secure(roles="ROLE_ADMIN")
      * @Template()
      */

@@ -1,7 +1,7 @@
 imports:
     - { resource: parameters.ini }
     - { resource: security.yml }
-    - { resource: @BloggerBlogBundle/Resources/config/config.yml }
+    - { resource: "@BloggerBlogBundle/Resources/config/config.yml" }
 
 framework:
     #esi:             ~
@@ -59,3 +59,7 @@ swiftmailer:
 jms_security_extra:
     secure_controllers:  true
     secure_all_services: false
+fos_user:
+    db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
+    firewall_name: main
+    user_class: Acme\UserBundle\Entity\User
