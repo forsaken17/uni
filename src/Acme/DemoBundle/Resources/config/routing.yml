@@ -2,10 +2,10 @@
 #    pattern:  /
 #    defaults: { _controller: AcmeDemoBundle:Welcome:index }
 
-_secured:
-    #pattern: /admin/
-    resource: "@AcmeDemoBundle/Controller/SecuredController.php"
-    type:     annotation
+#_secured:
+#    #pattern: /admin/
+#    resource: "@AcmeDemoBundle/Controller/SecuredController.php"
+#    type:     annotation
 
 #_demo:
 #    resource: "@AcmeDemoBundle/Controller/DemoController.php"

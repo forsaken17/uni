@@ -36,7 +36,7 @@ class Blog
     protected $blog;
 
     /**
-     * @ORM\Column(type="string", length="20")
+     * @ORM\Column(type="string", length=20)
      */
     protected $image;
 
@@ -107,7 +107,7 @@ class Blog
     }
 
     /**
-     * @ORM\preUpdate
+     * @ORM\PreUpdate
      */
     public function setUpdatedValue()
     {

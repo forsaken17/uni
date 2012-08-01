@@ -24,4 +24,12 @@ class User extends BaseUser
         parent::__construct();
         // your own logic
     }
+
+    public function equals(\Symfony\Component\Security\Core\User\UserInterface $user)
+    {
+        if($user){
+            return true;
+        }
+        return false;
+    }
 }

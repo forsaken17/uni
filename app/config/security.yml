@@ -1,14 +1,7 @@
 security:
-    encoders:
-        Symfony\Component\Security\Core\User\User: plaintext
-
-    role_hierarchy:
-        ROLE_ADMIN:       ROLE_USER
-        ROLE_SUPER_ADMIN: [ROLE_USER, ROLE_ADMIN, ROLE_ALLOWED_TO_SWITCH]
-
     providers:
         fos_userbundle:
-            id: fos_user.user_manager
+            id: fos_user.user_provider.username
 #        in_memory:
 #            users:
 #                user:  { password: userpass, roles: [ 'ROLE_USER' ] }
@@ -16,7 +9,8 @@ security:
 
     encoders:
         FOS\UserBundle\Model\UserInterface: sha512
-
+#    encoders:
+#        Symfony\Component\Security\Core\User\User: plaintext
     firewalls:
         main:
             pattern: ^/
@@ -26,9 +20,9 @@ security:
             logout:       true
             anonymous:    true
 
-        dev:
-            pattern:  ^/(_(profiler|wdt)|css|images|js)/
-            security: false
+#        dev:
+#            pattern:  ^/(_(profiler|wdt)|css|images|js)/
+#            security: false
 
 #        login:
 #            pattern:  ^/demo/secured/login$
@@ -57,3 +51,7 @@ security:
     role_hierarchy:
         ROLE_ADMIN:       ROLE_USER
         ROLE_SUPER_ADMIN: ROLE_ADMIN
+
+#    role_hierarchy:
+#        ROLE_ADMIN:       ROLE_USER
+#        ROLE_SUPER_ADMIN: [ROLE_USER, ROLE_ADMIN, ROLE_ALLOWED_TO_SWITCH]

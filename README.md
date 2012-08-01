@@ -2,16 +2,17 @@ uni
 ===
 what we have right now:
 
-1.  front end output
+### 1.  front end output
 
     not yet editable
 
-2.  secured zone with FOSUserBundle
+### 2.  secured zone with FOSUserBundle
 
     to create new user write:
 
-    ``php app/console fos:user:create``
+``` bash
+    php app/console fos:user:create
+    php app/console fos:user:promote
+```
 
-    ``php app/console fos:user:promote``
-
-3. test
+### 3. test
