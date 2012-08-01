@@ -14,5 +14,10 @@ what we have right now:
     php app/console fos:user:create
     php app/console fos:user:promote
 ```
+ROLE_ADMIN
 
-### 3. test
+<https://github.com/FriendsOfSymfony/FOSUserBundle/blob/master/Resources/doc/command_line_tools.md>
+
+### 3. Sonata admin
+
+* user edit

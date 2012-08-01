@@ -21,7 +21,11 @@
         "jms/security-extra-bundle": "1.1.*",
         "jms/di-extra-bundle": "1.0.*",
         "friendsofsymfony/user-bundle": "*",
-        "sonata-project/doctrine-orm-admin-bundle":"dev-master"
+        "sonata-project/user-bundle":"*",
+        "sonata-project/doctrine-orm-admin-bundle":"dev-master",
+        "sonata-project/easy-extends-bundle":"*",
+
+        "yuriteixeira/jqgrid-bundle": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [

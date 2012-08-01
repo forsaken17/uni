@@ -1,5 +1,5 @@
 {
-    "hash": "d3e91e1479b26a74f51674b017443999",
+    "hash": "292290d8705e14299665500d90726416",
     "packages": [
         {
             "package": "doctrine/common",
@@ -80,6 +80,12 @@
             "version": "1.1.0"
         },
         {
+            "package": "knplabs/knp-components",
+            "version": "dev-master",
+            "source-reference": "99ea408dc2a7c3616e688ffe67e3248ece69ff0e",
+            "commit-date": "1339767068"
+        },
+        {
             "package": "knplabs/knp-menu",
             "version": "1.1.x-dev",
             "source-reference": "v1.1.2",
@@ -88,6 +94,10 @@
         {
             "package": "knplabs/knp-menu-bundle",
             "version": "v1.1.0"
+        },
+        {
+            "package": "knplabs/knp-paginator-bundle",
+            "version": "v2.2"
         },
         {
             "package": "kriswallsmith/assetic",
@@ -142,10 +152,22 @@
             "commit-date": "1343731563"
         },
         {
+            "package": "sonata-project/doctrine-extensions",
+            "version": "dev-master",
+            "source-reference": "0a316790871e1ea7f019e2313667570eabd270b9",
+            "commit-date": "1332462393"
+        },
+        {
             "package": "sonata-project/doctrine-orm-admin-bundle",
             "version": "dev-master",
             "source-reference": "f73b117ce17fd69cd541c92c0c61cc37da31cb88",
             "commit-date": "1343732868"
+        },
+        {
+            "package": "sonata-project/easy-extends-bundle",
+            "version": "dev-master",
+            "source-reference": "4590e4ee970c031deae56c7cd18f71f77aeceb3c",
+            "commit-date": "1343805856"
         },
         {
             "package": "sonata-project/exporter",
@@ -158,6 +180,12 @@
             "version": "dev-master",
             "source-reference": "785870afce016cc387fadb361ad52c3d4a2e7fe6",
             "commit-date": "1339857469"
+        },
+        {
+            "package": "sonata-project/user-bundle",
+            "version": "dev-master",
+            "source-reference": "481f57bae54b69b01e79bff568d389c5935c622e",
+            "commit-date": "1343688637"
         },
         {
             "package": "swiftmailer/swiftmailer",
@@ -218,6 +246,12 @@
             "version": "dev-master",
             "source-reference": "51c866f415bbee670cd9ba13591307bce8dabdca",
             "commit-date": "1343464333"
+        },
+        {
+            "package": "yuriteixeira/jqgrid-bundle",
+            "version": "dev-master",
+            "source-reference": "92be3fc672a5b65aba7ef9597750c1a679d97bf6",
+            "commit-date": "1342644988"
         }
     ],
     "packages-dev": null,
@@ -234,6 +268,7 @@
         "sensio/distribution-bundle": 20,
         "sensio/framework-extra-bundle": 20,
         "sensio/generator-bundle": 20,
-        "sonata-project/doctrine-orm-admin-bundle": 20
+        "sonata-project/doctrine-orm-admin-bundle": 20,
+        "yuriteixeira/jqgrid-bundle": 20
     }
 }
