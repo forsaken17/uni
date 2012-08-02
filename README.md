@@ -2,11 +2,14 @@ uni
 ===
 what we have right now:
 
-### 1.  front end output
+### 1.  frontend output
 
-    not yet editable
+    editable blog entities
 
-### 2.  secured zone with FOSUserBundle
+### 2.  backend (Sonata admin)
+
+    *editable user entities
+    *secured zone with FOSUserBundle
 
     to create new user write:
 
@@ -18,6 +21,4 @@ ROLE_ADMIN
 
 <https://github.com/FriendsOfSymfony/FOSUserBundle/blob/master/Resources/doc/command_line_tools.md>
 
-### 3. Sonata admin
-
-* user edit
+### 3. TODO jqgrid integration
