@@ -1,6 +1,7 @@
 <?php
 namespace Blogger\BlogBundle\Admin;
 
+use Sonata\AdminBundle\Admin\AdminInterface;
 use Sonata\AdminBundle\Admin\Admin;
 use Sonata\AdminBundle\Form\FormMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
@@ -62,9 +63,10 @@ class BlogAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-                ->addIdentifier('id')
+                ->addIdentifier('id',null, array('label' => 'ID'))
                 ->addIdentifier('title', null, array('label' => 'Заголовок'))
                 ->add('created', null, array('label' => 'Дата публикации'));
+
     }
 
     /**
@@ -88,7 +90,8 @@ class BlogAdmin extends Admin
      *
      * @return void
      */
-    protected function configureSideMenu(MenuItemInterface $menu, $action, Admin $childAdmin = null)
+
+    protected function configureSideMenu(MenuItemInterface $menu, $action, AdminInterface $childAdmin = null)
     {
         $menu->addChild(
             $action == 'edit' ? 'Просмотр новости' : 'Редактирование новости',
